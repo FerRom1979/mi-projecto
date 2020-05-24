@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manicure</title> 
+    <!--esto es para el eslider-->
+    <link rel="stylesheet" href="./manicure_files/jquery.bxslider.css">
+    <script src="./manicure_files/jquery.min.js"></script>
+    <script src="./manicure_files/jquery.bxslider.min.js"></script>
+    
+
+    <link rel="stylesheet" href="./manicure_files/estilos.css">
+    <link rel="stylesheet" href="./manicure_files/style.css">
+</head>
+<body>
+   <!--Construir una estructura de pagina web con su correspondiente header, body y footer. Dentro del
+    body incluir etiquetas heading, un formulario básico con inputs y botones. Dos etiquetas con
+    hipervinculos e insertar un video de YouTube como Iframe.--> 
+    <div class="container">
+        <div class="cabecera">
+            <header class="header" id="header">
+                <h1 class="titulo" id="titulo">Valeria-nalis</h1>
+                <a href="http://127.0.0.1:5501/index.html#" class="logotipo" id="logotipo"> <img src="./manicure_files/logo_size.jpg" alt="Valeria-nalis"> experta en cuidado y belleza </a>
+                <nav class="navegador" id="navegador">
+                    <ul>
+                        <li>
+                            <a href="http://127.0.0.1:5501/index.html#">Tratamiento</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5501/index.html#">Reservas</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5501/index.html#">Novedades</a>
+                        </li>
+                        <li>
+                            <a href="http://127.0.0.1:5501/index.html#">Valeria-nalis</a>
+                        </li>
+                    </ul>
+                    <form action="http://127.0.0.1:5501/index.html">
+                        <input type="search" id="input-search" placeholder="buscar">
+                        <button type="submit">
+                             <span class="icon-magnifying-glass"></span>
+                        </button>
+                    </form>               
+                </nav>
+            </header>
+            <section>
+                <div class="fotos-slider" id="fotos-slaider">   
+                        <div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" aria-live="polite" style="width: 100%; overflow: hidden; position: relative; height: 500px;"><ul class="slider1" id="slider" style="width: auto; position: relative;">    
+                            <li aria-hidden="false" style="float: none; list-style: none; position: absolute; width: 1190px; z-index: 50; display: block;"><img src="./manicure_files/collage-de-dise-os-de-u-as.jpg" alt="foto1" width="1000px" height="500px" class="foto-slider"></li>
+                            <li aria-hidden="true" style="float: none; list-style: none; position: absolute; width: 1190px; z-index: 0; display: none;"><img src="./manicure_files/maos-ressecadas.jpg" alt="foto2" width="1000px" height="500px" class="foto-slider"></li>
+                            <li aria-hidden="true" style="float: none; list-style: none; position: absolute; width: 1190px; z-index: 0; display: none;"><img src="./manicure_files/estetica.jpg" alt="foto3" width="1000px" height="500px" class="foto-slider"></li>    
+                        </ul></div><div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev" href="http://127.0.0.1:5501/index.html">Prev</a><a class="bx-next" href="http://127.0.0.1:5501/index.html">Next</a></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="http://127.0.0.1:5501/index.html" data-slide-index="0" class="bx-pager-link active">1</a></div><div class="bx-pager-item"><a href="http://127.0.0.1:5501/index.html" data-slide-index="1" class="bx-pager-link">2</a></div><div class="bx-pager-item"><a href="http://127.0.0.1:5501/index.html" data-slide-index="2" class="bx-pager-link">3</a></div></div></div></div>                        
+                </div>
+            </section>
+            <main class="main">
+                <div class="main-conteiner">
+                    <h2>Tratamiento</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia unde error, quaerat, natus, qui alias incidunt in cum repellendus voluptates consequuntur? Ipsum laborum ut iusto ad eius repellendus omnis.</p>
+                    <a href="http://127.0.0.1:5501/tratamientos.html"><input type="button" value="VER MAS"></a>
+                </div>
+            </main>
+            <section>
+                <div class="section-conteiner">
+                    <h2>Novedades</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis suscipit ab at quam voluptas repellat quod et? Tempora quia ipsam dolore veniam cupiditate dolores commodi a facere officiis, ipsum explicabo?</p>
+                    <a href="http://127.0.0.1:5501/novedades.html"><input>Lo Ultimo</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+   
+    $(document).ready(function(){
+        $('.slider1').bxSlider({
+            mode: 'fade'
+        })
+        $('.slider2').bxSlider({
+            mode: 'fade'
+        })
+        $('.slider3').bxSlider({
+            mode: 'fade'
+        })
+
+    })
+   
+    </script>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
